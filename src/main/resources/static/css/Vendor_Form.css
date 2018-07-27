@@ -1,0 +1,56 @@
+#vendor_heading{
+	color: #6b6d6d;	
+}
+
+#Vendor_Form{
+	margin-top: 10px;
+	border: 2px solid #a1a1a1;
+	border-radius: 5px;
+	background-color: #fdfbfb;
+	padding: 25px;
+	width: 450px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#Vendor_Form label{
+	text-align: right;
+	padding-right: 10px;
+	width: 100px;
+}
+
+#Vendor_Fields{
+	height: 40px;
+	width: 300px;
+}
+
+#Vendor_Form label, #Vendor_Form input{
+	display: block;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#checkbox{
+	float: left;
+}
+
+#required, /* #required1 */, #required2, #required3{
+	color: #ed2846;
+}
+#required4{
+	color: #ed2846;
+	margin-left: 110px;
+}
+
+#vendor_button{
+	margin:auto;
+  	display:block;
+	border: none;
+    top: 65%;
+	background-color: #4CAF50;
+    color: white;
+	padding: 8px 15px;
+}
+#vendor_button:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

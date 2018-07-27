@@ -1,0 +1,57 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Vendor Registration</title>
+<link href="../../static/css/Vendor_Form.css" th:href="@{/css/Vendor_Form.css}" rel="stylesheet" />
+<script src="../../static/js/Vendor_Form_Validation.js" th:src="@{/js/Vendor_Form_Validation.js}"></script>
+</head>
+<body>
+
+<h2 id="vendor_heading" align="center">VENDOR REGISTRATION</h2>
+
+<div id="Vendor_Form">
+<form name="Vendor_Registration" onsubmit="return validate()"  action="/addVendor" method="post">
+
+<span id="required"></span>
+<label>Name<span id="required">*</span> </label>
+<input id="Vendor_Fields" type="text" name="VendorName" placeholder="Enter Vendor Name" onchange="return validate()" />
+<br><br><br><br>
+
+<!-- <span id="required1"></span>
+<label>Store Name<span id="required">*</span> </label>
+<input id="Vendor_Fields" type="text" name="store_name" placeholder="Enter Vendor Store Name" onchange="return validate()" />
+<br><br><br><br>
+ -->
+<span id="required2"></span>
+<label>City<span id="required">*</span> </label>
+<select id="Vendor_Fields" name="VendorCity" onchange="return validate()">
+<option value="" selected disabled>Select City</option>
+<option value="Nellore">Nellore</option>
+<option value="Vizag">Vizag</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Warangal">Warangal</option>
+<option value="Karimnagar">Karimnagar</option>
+<option value="Nizamabad">Nizamabad</option>
+</select>
+<br><br><br>
+
+<span id="required3"></span>
+<label>Email<span id="required">*</span> </label>
+<input id="Vendor_Fields" type="text" name="VendorEmail" placeholder="Enter Vendor Email" onchange="return validate()"/>
+<br><br><br><br>
+
+<span id="required4"></span><br>
+<label>Services<span id="required">*</span> </label>
+<div id="checkbox"><input type="checkbox"  name="Services" value="Breakfast" onchange="return validate()"/>&nbsp;Breakfast</div>
+<div id="checkbox"><input type="checkbox"  name="Services" value="Lunch/Dinner" onchange="return validate()"/>&nbsp;Lunch/Dinner</div>
+<div id="checkbox"><input type="checkbox"  name="Services" value="Bakery" onchange="return validate()"/>&nbsp;Bakery</div>
+<div id="checkbox"><input type="checkbox"  name="Services" value="Sweets" onchange="return validate()"/>&nbsp;Sweets</div>
+<br><br><br><br>
+
+<button id="vendor_button" type="submit">Register</button>
+</form>
+</div>
+<!-- <p>HI</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button> -->
+</body>
+</html>
